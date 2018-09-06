@@ -1,0 +1,33 @@
+<html>
+<head>
+	<title>Life is Hard </title>
+</head>
+<body a link="black" vlink="black">
+<center><h1>Life Is Hard</h1></center>
+<p></p>
+<p id="demo"></p>
+<center><img src="keem.jpg" style="width:315px;height:315px;"></center>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var health;
+    var damage = Math.floor(Math.random() * 3) + 1;
+    if (damage = 1) {
+        health = "Good morning";
+    } else if (damage = 2) {
+        health = "Good day";
+    } else {
+        health = "Good evening";
+    }
+document.getElementById("demo").innerHTML = health;
+}
+</script>
+
+</body>
+
+
+</html>
