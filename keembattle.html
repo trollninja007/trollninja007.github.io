@@ -1,29 +1,189 @@
 <html>
 <head>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 128px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.button2 {
+    background-color: #ff0000;
+    border: none;
+    color: white;
+    padding: 15px 128px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
 	<title>Life is Hard </title>
 </head>
 <body a link="black" vlink="black">
 <center><h1>Life Is Hard</h1></center>
-<p></p>
-<p id="demo"></p>
+
+<center><p style="font-family:verdana;"><b><font size = 4> KeemStar The Gnome </font></b></p></center>
+
+<center><p id="kill"><button class='button' id="demo">10</button></p></center>
+
 <center><img src="keem.jpg" style="width:315px;height:315px;"></center>
 
-<button onclick="myFunction()">Try it</button>
+<center><p><b><font size = 4> Your Health </font></b></p></center>
 
-<p id="demo"></p>
+<center><p id="change"><button onclick=myFunction()><font size = 5 >Attack</font></button></p></center>
+
+<script>
+var health = (10 - (Math.floor(Math.random() * 3) + 1))
+</script>
+
+<script>
+var health2 = (health - (Math.floor(Math.random() * 3) + 1))
+</script>
+
+<script>
+var health3 = (health2 - (Math.floor(Math.random() * 3) + 1))
+</script>
+
+<script>
+var health4 = (health3 - (Math.floor(Math.random() * 3) + 1))
+</script>
+
+<script>
+var health5 = (health4 - (Math.floor(Math.random() * 3) + 1))
+</script>
+
+<script>
+var health6 = (health5 - (Math.floor(Math.random() * 3) + 1))
+</script>
+
+<script>
+var health7 = (health6 - (Math.floor(Math.random() * 3) + 1))
+</script>
+
+<script>
+var health8 = (health7 - (Math.floor(Math.random() * 3) + 1))
+</script>
+
+<script>
+var health9 = (health8 - (Math.floor(Math.random() * 3) + 1))
+</script>
+
+<script>
+var health10 = (health9 - (Math.floor(Math.random() * 3) + 1))
+</script>
+
 
 <script>
 function myFunction() {
-    var health;
-    var damage = Math.floor(Math.random() * 3) + 1;
-    if (damage = 1) {
-        health = "Good morning";
-    } else if (damage = 2) {
-        health = "Good day";
-    } else {
-        health = "Good evening";
-    }
 document.getElementById("demo").innerHTML = health;
+document.getElementById("change").innerHTML = "<button onclick=myFunction2()><font size = 5 >Attack</font></button>"
+}
+</script>
+
+<script>
+function myFunction2() {
+document.getElementById("demo").innerHTML = health2;
+document.getElementById("change").innerHTML = "<button onclick=myFunction3()><font size = 5 >Attack</font></button>"
+}
+</script>
+
+<script>
+function myFunction3() {
+document.getElementById("demo").innerHTML = health3;
+document.getElementById("change").innerHTML = "<button onclick=myFunction4()><font size = 5 >Attack</font></button>"
+}
+</script>
+
+<script>
+function myFunction4() {
+	if (health4 < 1) {
+		document.getElementById("kill").innerHTML = "<button class='button button2'>Deafeated</button>"
+		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
+	} else { 
+document.getElementById("demo").innerHTML = health4;
+document.getElementById("change").innerHTML = "<button onclick=myFunction5()><font size = 5 >Attack</font></button>"
+	}
+}
+</script>
+
+<script>
+function myFunction5() {
+	if (health5 < 1) {
+		document.getElementById("kill").innerHTML = "<button class='button button2'>Deafeated</button>"
+		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
+	} else { 
+document.getElementById("demo").innerHTML = health5;
+document.getElementById("change").innerHTML = "<button onclick=myFunction6()><font size = 5 >Attack</font></button>"
+	}
+}
+</script>
+
+<script>
+function myFunction6() {
+	if (health6 < 1) {
+		document.getElementById("kill").innerHTML = "<button class='button button2'>Deafeated</button>"
+		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
+	} else { 
+document.getElementById("demo").innerHTML = health6;
+document.getElementById("change").innerHTML = "<button onclick=myFunction7()><font size = 5 >Attack</font></button>"
+}
+}
+</script>
+
+<script>
+function myFunction7() {
+	if (health7 < 1) {
+		document.getElementById("kill").innerHTML = "<button class='button button2'>Deafeated</button>"
+		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
+	} else { 
+document.getElementById("demo").innerHTML = health7;
+document.getElementById("change").innerHTML = "<button onclick=myFunction8()><font size = 5 >Attack</font></button>"
+}
+}
+</script>
+
+<script>
+function myFunction8() {
+	if (health8 < 1) {
+		document.getElementById("kill").innerHTML = "<button class='button button2'>Deafeated</button>"
+		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
+	} else { 
+document.getElementById("demo").innerHTML = health8;
+document.getElementById("change").innerHTML = "<button onclick=myFunction9()><font size = 5 >Attack</font></button>"
+}
+}
+</script>
+
+<script>
+function myFunction9() {
+	if (health9 < 1) {
+		document.getElementById("kill").innerHTML = "<button class='button button2'>Deafeated</button>"
+		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
+	} else { 
+document.getElementById("demo").innerHTML = health9;
+document.getElementById("change").innerHTML = "<button onclick=myFunction10()><font size = 5 >Attack</font></button>"
+}
+}
+</script>
+
+<script>
+function myFunction10() {
+	if (health10 < 1) {
+		document.getElementById("kill").innerHTML = "<button class='button button2'>Deafeated</button>"
+		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
+	} else { 
+document.getElementById("demo").innerHTML = health10;
+document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
+}
 }
 </script>
 
