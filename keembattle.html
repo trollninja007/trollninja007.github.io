@@ -5,7 +5,7 @@
     background-color: #4CAF50;
     border: none;
     color: white;
-    padding: 15px 128px;
+    padding: 5px 128px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -38,6 +38,7 @@
 <center><img src="keem.jpg" style="width:315px;height:315px;"></center>
 
 <center><p><b><font size = 4> Your Health </font></b></p></center>
+<center><p id="kill2"><button class='button' id="demo2">10</button></p></center>
 
 <center><p id="change"><button onclick=myFunction()><font size = 5 >Attack</font></button></p></center>
 
@@ -85,6 +86,7 @@ var health10 = (health9 - (Math.floor(Math.random() * 3) + 1))
 <script>
 function myFunction() {
 document.getElementById("demo").innerHTML = health;
+document.getElementById("demo2").innerHTML = 9
 document.getElementById("change").innerHTML = "<button onclick=myFunction2()><font size = 5 >Attack</font></button>"
 }
 </script>
@@ -92,6 +94,7 @@ document.getElementById("change").innerHTML = "<button onclick=myFunction2()><fo
 <script>
 function myFunction2() {
 document.getElementById("demo").innerHTML = health2;
+document.getElementById("demo2").innerHTML = 8
 document.getElementById("change").innerHTML = "<button onclick=myFunction3()><font size = 5 >Attack</font></button>"
 }
 </script>
@@ -99,6 +102,7 @@ document.getElementById("change").innerHTML = "<button onclick=myFunction3()><fo
 <script>
 function myFunction3() {
 document.getElementById("demo").innerHTML = health3;
+document.getElementById("demo2").innerHTML = 7
 document.getElementById("change").innerHTML = "<button onclick=myFunction4()><font size = 5 >Attack</font></button>"
 }
 </script>
@@ -110,6 +114,7 @@ function myFunction4() {
 		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
 	} else { 
 document.getElementById("demo").innerHTML = health4;
+document.getElementById("demo2").innerHTML = 6
 document.getElementById("change").innerHTML = "<button onclick=myFunction5()><font size = 5 >Attack</font></button>"
 	}
 }
@@ -122,6 +127,7 @@ function myFunction5() {
 		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
 	} else { 
 document.getElementById("demo").innerHTML = health5;
+document.getElementById("demo2").innerHTML = 5
 document.getElementById("change").innerHTML = "<button onclick=myFunction6()><font size = 5 >Attack</font></button>"
 	}
 }
@@ -134,6 +140,7 @@ function myFunction6() {
 		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
 	} else { 
 document.getElementById("demo").innerHTML = health6;
+document.getElementById("demo2").innerHTML = 4
 document.getElementById("change").innerHTML = "<button onclick=myFunction7()><font size = 5 >Attack</font></button>"
 }
 }
@@ -146,6 +153,7 @@ function myFunction7() {
 		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
 	} else { 
 document.getElementById("demo").innerHTML = health7;
+document.getElementById("demo2").innerHTML = 3
 document.getElementById("change").innerHTML = "<button onclick=myFunction8()><font size = 5 >Attack</font></button>"
 }
 }
@@ -158,6 +166,7 @@ function myFunction8() {
 		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
 	} else { 
 document.getElementById("demo").innerHTML = health8;
+document.getElementById("demo2").innerHTML = 2
 document.getElementById("change").innerHTML = "<button onclick=myFunction9()><font size = 5 >Attack</font></button>"
 }
 }
@@ -170,6 +179,7 @@ function myFunction9() {
 		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
 	} else { 
 document.getElementById("demo").innerHTML = health9;
+document.getElementById("demo2").innerHTML = 1
 document.getElementById("change").innerHTML = "<button onclick=myFunction10()><font size = 5 >Attack</font></button>"
 }
 }
@@ -182,6 +192,7 @@ function myFunction10() {
 		document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
 	} else { 
 document.getElementById("demo").innerHTML = health10;
+document.getElementById("demo2").innerHTML = 1
 document.getElementById("change").innerHTML = "<button><a href=beatkeem.html><font size = 5 >You Defeated KeemStar</font></a></button>"
 }
 }

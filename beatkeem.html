@@ -6,13 +6,26 @@
 <body a link="black" vlink="black">
 <center><h1>Life Is Hard</h1></center>
 <center><p><b>Keemstar:</b> I didn't know you were this strong. But I'm still fast as fuck boy, even if you have all my dollar coins. </p></center>
-<center><p><button onclick = "MyFunction()" >gold</button></p></center>
+<center><p><i><b>Keemstar runs away</b></i></p></center>
+<center><p>You've never seen anything that quick before, he's just too fast. But you do see that he left the coins on the ground.</p></center>
+<center><p id = "leave"><button onclick = "Take()" >Take Gold</button><button onclick = "Leave()" >Leave Gold</button></p></center>
 <script>
-function MyFunction()	{
-Number(sessionStorage.gold)+10;
-document.getElementById("demo").innerHTML = sessionStorage.Gold;
+function Take()	{
+window.sessionStorage.gold = 10;
+document.getElementById("demo").innerHTML = "You take " + sessionStorage.gold + " gold" ;
+document.getElementById("demo2").innerHTML = "After continuing your journey for a bit, you finaly see how to exit the forest"
+document.getElementById("demo1").innerHTML = "<button><a href=leavewood.html>Continue</a></button>"
+document.getElementById("leave").innerHTML = ""
+}
+function Leave()	{
+document.getElementById("demo").innerHTML = "You leave the coins because why not right."
+document.getElementById("demo2").innerHTML = "After continuing your journey for a bit, you finaly see how to exit the forest"
+document.getElementById("demo1").innerHTML = "<button><a href=leavewood.html>Continue</a></button>"
+document.getElementById("leave").innerHTML = ""
 }
 </script>
-<p id = "demo"></p>
+<center><p id = "demo"></p></center>
+<center><p id = "demo2"></p></center>
+<center><p id = "demo1"></p></center>
 </body>
 </html>

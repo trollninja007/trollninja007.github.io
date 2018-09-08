@@ -1,0 +1,44 @@
+<html>
+<head>
+	<title>Life is Hard </title>
+</head>
+<body a link="black" a link="<plain>" vlink="black">
+<center><h1>Life Is Hard</h1></center>
+<center><p>It's been a while since you left the woods.</p>
+	<p>The fight with Keem the gnome left you bruised and cut but you managed to pull through.</p>
+	<p>You happen to fall unto a dirt road, but you have no clue where it leads to.</p>
+	<p>After a couple hours of walking, you stumble upon another person walking the same path as you.</p>
+	<p><b>Person:</b> You look quite messed up sir!</p></center>
+<center><p id = "say3"><button onclick = "SayFN()">I just killed a gnome and don't know what I'm doing</button>  <button onclick = "SayFN2()">I was walking and I fell in the mud</button></p></center>
+<center><p id = "characterSay"></p><center>
+<center><p id = "say2"></p></center>
+<center><p id = "good"></p></center>
+<center><p id = "bad"></p></center>
+<script>
+function SayFN() {
+	var y = (Math.floor(Math.random() * 20) + 1)
+	document.getElementById("characterSay").innerHTML = "<center><b>You: </b>I just killed a gnome and don't know what I'm doing</center>"
+if (y < 2) {
+	document.getElementById("say2").innerHTML = "<b>Person: </b>apples are nice too, but oranges taste good in chicken avocado dip"
+}
+if (y > 1) {
+	document.getElementById("say2").innerHTML = "<b>Person: </b>That's insane are you ok? Do you need help?"
+}
+	document.getElementById("say3").innerHTML = ""
+	document.getElementById("good").innerHTML = '<center><button><a href = mark2.html>No Im alright, I wouldnt want to burden you.</a></button><button><a href = mark1.html>Yes, give me something!</a></button></center>'
+	
+}
+</script>
+<script>
+function SayFN2() {
+	document.getElementById("characterSay").innerHTML = "<center><b>You: </b>I was walking and I fell in the mud</center>"
+	document.getElementById("say2").innerHTML = "<center><b>Person: </b>Never seen anyone fall in the mud like that..</center><br><center><b>Person: </b>Anyhow, my name is mark, what's yours<center>?"
+	//insert text box to choose name of character then store in html 5 webstorage
+	document.getElementById("say3").innerHTML = ""
+	
+}
+</script>
+</body>
+
+
+</html>
