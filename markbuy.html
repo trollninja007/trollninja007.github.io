@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Life is Hard </title>
+</head>
+<body a link="black" vlink="black">
+<style>
+.button {
+    background-color: #A0522D;
+    border: 4px solid #8B4513;
+    color: #FFF8DC;
+    padding: 5px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+<center><h1>Life Is Hard</h1></center></center>
+<center><p><button class = "button"><b>Mark's Store</b></button></p>
+<center><p><b>Mark: </b>What would you like to buy?</p>
+<br>
+<button onclick = "herbs()" name = "Herbs" value = "herbs.jpg">
+  <p><b><font size = "3">Magic Herbs</font></b></p>
+   <img src="herbs.jpg" style = "width:150px;height:150px;"/>
+</button>
+<button onclick = "potion()" name = "Health Potion" value = "healthpotion.jpg">
+  <p><b><font size = "3">Health Potion</font></b></p>
+   <img src="healthpotion.jpg" style = "width:150px;height:150px;"/>
+</button>
+</center>
+<script>
+function herbs() {
+	if (sessionStorage.gold > 9) {
+		window.sessionStorage.herbs = 1;
+		sessionStorage.gold = Number(sessionStorage.gold) - 10;
+		document.getElementById("nomoney").innerHTML = sessionStorage.herbs;
+	}
+	else {
+document.getElementById("nomoney").innerHTML = "<b>Mark: </b>That's not enough money."
+	}
+}
+function potion() {
+	if (sessionStorage.gold > 9) {
+		sessionStorage.hppot = Number(sessionStorage.hppot) + 1;
+		sessionStorage.gold = Number(sessionStorage.gold) - 10;
+		document.getElementById("nomoney").innerHTML = sessionStorage.hppot;
+	}
+	else {
+document.getElementById("nomoney").innerHTML = "<b>Mark: </b>That's not enough money."
+	}
+}
+</script>
+<center><p id = "nomoney"></p></center>
+</body>
+
+
+</html>
