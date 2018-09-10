@@ -36,7 +36,8 @@ function herbs() {
 	if (sessionStorage.gold > 9) {
 		window.sessionStorage.herbs = 1;
 		sessionStorage.gold = Number(sessionStorage.gold) - 10;
-		document.getElementById("nomoney").innerHTML = sessionStorage.herbs;
+		document.getElementById("nomoney").innerHTML = '<b>Mark: </b>Hope you enjoy them, theyre my "home made" recipe <b>*wink* *wink*</b>'
+		document.getElementById("many").innerHTML = "<p><b>You now have " + sessionStorage.herbs + " magic herbs</b></p>" ;
 	}
 	else {
 document.getElementById("nomoney").innerHTML = "<b>Mark: </b>That's not enough money."
@@ -46,7 +47,8 @@ function potion() {
 	if (sessionStorage.gold > 9) {
 		sessionStorage.hppot = Number(sessionStorage.hppot) + 1;
 		sessionStorage.gold = Number(sessionStorage.gold) - 10;
-		document.getElementById("nomoney").innerHTML = sessionStorage.hppot;
+		document.getElementById("nomoney").innerHTML = "<b>Mark: </b>Thanks for buying my health potions, means a lot" ;
+		document.getElementById("many").innerHTML = "<p><b>You now have " + sessionStorage.hppot + " health potions</b></p>" ;
 	}
 	else {
 document.getElementById("nomoney").innerHTML = "<b>Mark: </b>That's not enough money."
@@ -54,7 +56,9 @@ document.getElementById("nomoney").innerHTML = "<b>Mark: </b>That's not enough m
 }
 </script>
 <br>
-<center><p id = "nomoney"></p></center>
+<center id = "nomoney"></center>
+<center id = "many"></center>
+<center><p><button><a href = road.html><font size = "3">Leave</font></a></button></p></center>
 </body>
 
 
