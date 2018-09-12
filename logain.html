@@ -1,11 +1,27 @@
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Life is Hard </title>
 </head>
 <body a link="black" vlink="black">
 <center><h1>Life Is Hard</h1></center>
-<p></p>
-<p></p>
+<br>
+<center>You decide to go right, into the the dead forest.
+<p>In the distance you see something near a tree</p>
+<p>You get closer and closer and to your shock, it's someone hanging from a tree. Wait, that's not all. There's two of them. No, three, four, five, as far as your eyes can see you see dead people hanging</p>
+<p><b>?: </b>Do you want to end up like them? I'm guessing you don't so don't turn around.</p>
+<p><button onclick= "bat()" >Turn Around</button><button onclick= "stay()" >Listen to him</button></center>
+<script>
+function bat() {
+		document.getElementById("bop").innerHTML = ("You turn around to see a bat hurl towards your face.</p><p>Next thing you know, you wake up, underground.</p><p><button><a href=logain2.html>Continue</a></button>")
+}
+function stay() {
+document.getElementById("bop").innerHTML = ("You listen to him and put your hands up.</p><p>The unknown person proceeds to blindfold you and restrain your hands. He tells you to watch your head and starts going down stairs.</p><p><button><a href=logain2.html>Continue</a></button></p>")
+}
+</script>
+<center><p id = "bop"></p>
+</center>
+
 </body>
 
 

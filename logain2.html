@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Life is Hard </title>
+</head>
+<body a link="black" vlink="black">
+<center><h1>Life Is Hard</h1></center>
+<br>
+<center><b>?: </b>I see you're awake. That's nice. We can finnaly proceed to my little game.
+<p><b>?: </b>If you win, you get your freedom back and maybe an extra reward. If you lose.. well I'll decide what to do with you.</p>
+<p><b>?: </b>Do you accept my terms?</p>
+<button onclick = "yes()">Yes</button><button onclick = "no()">No</button></center>
+<script>
+function yes()	{
+	document.getElementById("demo").innerHTML = ("><b>?: </b>Good, then I'll see you later. Make sure to enjoy yourself now</p><p><b>You fall asleep once more</b></p><p><button><a href=logain3.html>Continue</a></button>")
+}
+function no()	{
+	document.getElementById("demo").innerHTML = ("<b>?: </b>Well it's not like you have a choice.. It'll be over before you know it.</p><p><b>You fall asleep once more</b></p><p><button><a href=logain3.html>Continue</a></button>")
+}
+</script>
+<center><p id = "demo"></p></center>
+</body>
+
+
+</html>
